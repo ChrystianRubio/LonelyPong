@@ -6,6 +6,7 @@ class Tela:
         pygame.init()
         self.janela = pygame.display.set_mode((1365, 700))
         pygame.display.set_caption('Pong Solitario')
+        self.clock = pygame.time.Clock()
         self.delimitador_x_direita = 1215
         self.delimitador_x_esquerda = 50
         self.delimitador_y_baixo = 595
@@ -55,6 +56,6 @@ class Tela:
         texto = self.font.render(f'Velocidade: {str(bola.velocidade)[0:3]}', True, (255, 0, 0))
         self.janela.blit(texto, (60, 60))
 
-    @staticmethod
-    def atualizando_tela():
+    def atualizando_tela(self):
         pygame.display.update()
+        self.clock.tick(300)
