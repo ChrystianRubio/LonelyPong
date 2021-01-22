@@ -3,6 +3,8 @@ Jogo simples feito em pygame
 
 #############################################
 
-Necessario pygame-2.0.0 para abrir o jogo
+Dependências: pygame-2.0.0 
 
 pip3 install pygame
+
+#############################################
